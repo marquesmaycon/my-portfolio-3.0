@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export function Header() {
   return (
-    <div className="fixed inset-x-0 flex h-16 border-b border-b-neutral-200 bg-white/10 backdrop-blur-md">
+    <div className="fixed inset-x-0 z-50 flex h-16 border-b border-b-neutral-200 bg-white/5 backdrop-blur-sm">
       <div className="container flex flex-1 items-center divide-x divide-neutral-200">
         <div className="flex h-full flex-1 items-center">maycon_silva();</div>
         <div className="flex h-full flex-1 items-center justify-center">
