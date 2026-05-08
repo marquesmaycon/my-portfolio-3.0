@@ -25,7 +25,7 @@ export const navLinks = [
 
 export function Header() {
   return (
-    <header className="bg-background/10 fixed inset-x-0 z-50 flex h-12 backdrop-blur-sm lg:h-16">
+    <header className="bg-background/10 fixed inset-x-0 z-50 flex h-12 backdrop-blur-sm md:h-14 lg:h-16">
       <div className="container flex flex-1 items-center">
         <div className="flex-1 font-medium">
           <span className="text-accent">function</span>

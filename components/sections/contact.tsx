@@ -7,7 +7,7 @@ export function Contact() {
     <section id="contact">
       <div className="container">
         <div className="lg:grid lg:grid-cols-3">
-          <div className="row-span-2 min-h-64 w-full border-b p-8 md:border-r md:border-l">
+          <div className="row-span-2 min-h-64 w-full border-b py-4 md:border-r md:border-l md:p-8">
             <span className="text-muted-foreground">Entre em contato</span>
             <h4 className="font-heading mt-4 text-3xl font-normal text-pretty sm:max-w-2/3 md:max-w-none">
               Vamos criar algo{" "}
@@ -36,7 +36,7 @@ const ContactCard = ({ title, subtitle }: ContactCardProps) => {
   return (
     <a
       href="#"
-      className="bg-background hover:bg-border flex min-h-64 flex-col p-8 transition-colors"
+      className="bg-background hover:bg-border flex min-h-64 flex-col py-4 transition-colors md:p-8"
     >
       <div className="flex items-start justify-between">
         <div>

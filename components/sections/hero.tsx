@@ -1,16 +1,7 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
-import {
-  ArrowRight,
-  Braces,
-  Code2,
-  Database,
-  Hash,
-  Plus,
-  Terminal,
-  X,
-} from "lucide-react";
+import { ArrowRight, Braces, Plus } from "lucide-react";
 
 gsap.registerPlugin(useGSAP);
 
@@ -31,49 +22,37 @@ export function Hero() {
       const centerY = window.innerHeight / 2;
 
       items.forEach((item) => {
-        gsap.set(item, {
-          x: centerX,
-          y: centerY,
-          opacity: 0,
-          scale: 0,
-          rotate: gsap.utils.random(-180, 180),
-          force3D: true,
-        });
-
         const angle = gsap.utils.random(0, Math.PI * 2);
-        // const angle = 90;
-        const distance = gsap.utils.random(200, 1200);
+        const distance = gsap.utils.random(300, 900);
 
         const x = Math.cos(angle) * distance;
         const y = Math.sin(angle) * distance;
 
-        const duration = gsap.utils.random(5, 10);
-        const scale = gsap.utils.random(1, 3);
+        const duration = gsap.utils.random(4, 16);
+        const scale = gsap.utils.random(0.5, 3);
+
+        gsap.set(item, {
+          x: centerX,
+          y: centerY,
+          opacity: gsap.utils.random(0.2, 0.8),
+          scale: 0,
+          force3D: true,
+        });
 
         const tl = gsap.timeline({
           repeat: -1,
-          delay: gsap.utils.random(0, 5),
-          // repeatDelay: gsap.utils.random(0, 2),
+          // repeatRefresh: true,
+          delay: gsap.utils.random(0, 8),
         });
 
         tl.to(item, {
-          opacity: gsap.utils.random(0.2, 0.8),
+          x: centerX + x,
+          y: centerY + y,
+          rotate: `+=${gsap.utils.random(180, 600)}`,
           scale,
-          // duration: 0.2,
+          duration,
           ease: "power2.out",
         });
-
-        tl.to(
-          item,
-          {
-            x: centerX + x,
-            y: centerY + y,
-            rotate: `+=${gsap.utils.random(180, 600)}`,
-            duration,
-            ease: "expo.out",
-          },
-          0,
-        );
 
         tl.to(
           item,
@@ -84,16 +63,9 @@ export function Hero() {
           },
           duration * 0.3,
         );
-
-        tl.set(item, {
-          x: centerX,
-          y: centerY,
-          opacity: 0,
-          scale: 0,
-        });
       });
     },
-    { dependencies: [], scope: container },
+    { scope: container },
   );
 
   return (
@@ -140,14 +112,14 @@ export function Hero() {
           ref={container}
           className="pointer-events-none absolute inset-0 overflow-hidden mask-[radial-gradient(circle_at_center,transparent_0%,transparent_18%,black_50%)]"
         >
-          {Array.from({ length: 25 }).map((_, index) => (
-            <div key={index} className="particle absolute top-0 left-0 z-0">
-              <Plus size={32} strokeWidth={0.3} />
+          {Array.from({ length: 45 }).map((_, index) => (
+            <div key={index} className="particle absolute z-0">
+              <Plus size={32} strokeWidth={0.4} />
             </div>
           ))}
-          {Array.from({ length: 25 }).map((_, index) => (
-            <div key={index} className="particle absolute top-0 left-0 z-0">
-              <Braces size={32} strokeWidth={0.3} />
+          {Array.from({ length: 5 }).map((_, index) => (
+            <div key={index} className="particle absolute z-0">
+              <Braces size={32} strokeWidth={0.4} />
             </div>
           ))}
         </div>

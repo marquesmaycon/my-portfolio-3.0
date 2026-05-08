@@ -19,10 +19,10 @@ export function MobileMenu() {
       <SheetTrigger className="lg:hidden">
         <Menu />
       </SheetTrigger>
-      <SheetContent showCloseButton={false}>
+      <SheetContent showCloseButton={false} className="bg-background">
         <SheetHeader>
-          <SheetTitle>Navegação</SheetTitle>
-          <SheetDescription>Navega pelas seções</SheetDescription>
+          <SheetTitle className="">Navegação</SheetTitle>
+          <SheetDescription>Navegue pelas seções</SheetDescription>
         </SheetHeader>
         <div className="flex flex-col items-start gap-8 pt-8">
           {navLinks.map((nv) => (
