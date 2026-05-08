@@ -6,6 +6,7 @@ import { Header } from "@/components/header";
 import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
 import { Hero } from "@/components/sections/hero";
+import { Projects } from "@/components/sections/projects";
 import { Tape } from "@/components/sections/tape";
 import { gsap } from "@/lib/gsap";
 
@@ -44,6 +45,7 @@ export default function Home() {
     <div className="divide divide-y">
       <Header />
       <Hero />
+      <Projects />
       <Tape />
       <Contact />
       <Footer />
