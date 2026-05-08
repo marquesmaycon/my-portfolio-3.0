@@ -32,13 +32,24 @@ export default function RootLayout({
     <html
       lang="pt-br"
       suppressHydrationWarning
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, jetbrainsMonoHeading.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        geistSans.variable,
+        geistMono.variable,
+        jetbrainsMonoHeading.variable,
+      )}
     >
-      <body className="min-h-full flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <body className="flex min-h-full flex-col">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
