@@ -149,11 +149,11 @@ export function Projects() {
             ) => (
               <div
                 key={title}
-                className="bg-background sticky top-0 overflow-hidden border px-4 pt-4 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
-                style={{ top: `${64 + index * 40}px` }}
+                className="bg-background sticky overflow-hidden border px-4 pt-4 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+                style={{ top: `${64 + index * 20}px` }}
               >
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-                  <div className="relative space-y-2 lg:pb-16">
+                  <div className="relative space-y-4 md:space-y-8 lg:pb-16">
                     <div>
                       <div className="inline-flex w-full items-center justify-between gap-2 text-xs tracking-widest uppercase md:justify-start md:text-sm">
                         <span>{tag}</span>
@@ -207,7 +207,7 @@ export function Projects() {
                       alt={title}
                       width={800}
                       height={800}
-                      className="mt-8 -mb-4 w-200 border object-cover object-top-left shadow-2xl transition hover:grayscale-0 md:mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-162.5 lg:max-w-none lg:grayscale"
+                      className="mt-8 -mb-4 w-200 border object-cover object-top-left transition hover:grayscale-0 md:mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-162.5 lg:max-w-none lg:grayscale"
                     />
                   </div>
                 </div>

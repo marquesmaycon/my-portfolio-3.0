@@ -58,7 +58,7 @@ export function Tape() {
   );
 
   return (
-    <section className="bg-border overflow-hidden">
+    <section className="bg-accent/15 overflow-hidden">
       <div className="bg-background my-2 border">
         <div className="container">
           <div className="flex mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
