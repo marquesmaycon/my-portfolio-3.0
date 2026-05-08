@@ -40,7 +40,8 @@ export function Hero() {
         });
 
         const angle = gsap.utils.random(0, Math.PI * 2);
-        const distance = gsap.utils.random(200, 800);
+        // const angle = 90;
+        const distance = gsap.utils.random(200, 1200);
 
         const x = Math.cos(angle) * distance;
         const y = Math.sin(angle) * distance;
@@ -51,13 +52,13 @@ export function Hero() {
         const tl = gsap.timeline({
           repeat: -1,
           delay: gsap.utils.random(0, 5),
-          repeatDelay: gsap.utils.random(0, 2),
+          // repeatDelay: gsap.utils.random(0, 2),
         });
 
         tl.to(item, {
           opacity: gsap.utils.random(0.2, 0.8),
           scale,
-          duration: 0.2,
+          // duration: 0.2,
           ease: "power2.out",
         });
 
@@ -66,7 +67,6 @@ export function Hero() {
           {
             x: centerX + x,
             y: centerY + y,
-            opacity: 0.75,
             rotate: `+=${gsap.utils.random(180, 600)}`,
             duration,
             ease: "expo.out",
@@ -92,27 +92,35 @@ export function Hero() {
         });
       });
     },
-    { scope: container },
+    { dependencies: [], scope: container },
   );
 
   return (
-    <section className="relative flex h-screen items-center overflow-hidden border-b border-b-neutral-200">
-      <div className="container" ref={container}>
-        <div className="flex flex-col items-center gap-4">
-          <h3 className="text-2xl font-medium">Full Stack Developer</h3>
-          <h1 className="font-heading text-6xl leading-20 font-semibold">
-            Building amazing <br /> Experiences
-          </h1>
+    <section
+      id="home"
+      className="relative flex h-screen items-center overflow-hidden"
+    >
+      <div className="container">
+        <div className="z-10 flex flex-col gap-16 md:text-center lg:gap-8">
+          <div>
+            <h3 className="font-heading text-md mb-6 font-medium uppercase lg:text-2xl">
+              Full-Stack Developer
+            </h3>
+            <h1 className="font-heading text-5xl font-bold lg:text-6xl lg:leading-20">
+              Building <span className="text-accent">amazing</span> <br />{" "}
+              Experiences
+            </h1>
+          </div>
 
           <div>
             <p className="text-muted-foreground leading-7">
-              Sou um desenvolvedor full-stack apaixonado por criar aplicações
-              web
+              Meu nome é Maycon, sou um desenvolvedor de software focado em
+              experiências fluidas e impactantes.
             </p>
 
-            <p className="text-muted-foreground">
+            {/* <span className="text-muted-foreground">
               Disponível para novos projetos
-            </p>
+            </span> */}
           </div>
 
           <div className="space-x-4">
@@ -124,21 +132,22 @@ export function Hero() {
             </Button>
           </div>
         </div>
-        {Array.from({ length: 10 }).map((_, index) => (
-          <div key={index} className="particle absolute top-0 left-0">
-            <Plus size={32} strokeWidth={0.3} />
-          </div>
-        ))}
-        {Array.from({ length: 10 }).map((_, index) => (
-          <div key={index} className="particle absolute top-0 left-0">
-            <Code2 size={32} strokeWidth={0.3} />
-          </div>
-        ))}
-        {Array.from({ length: 10 }).map((_, index) => (
-          <div key={index} className="particle absolute top-0 left-0">
-            <Braces size={32} strokeWidth={0.3} />
-          </div>
-        ))}
+
+        <div
+          ref={container}
+          className="pointer-events-none absolute inset-0 overflow-hidden mask-[radial-gradient(circle_at_center,transparent_0%,transparent_18%,black_50%)]"
+        >
+          {Array.from({ length: 25 }).map((_, index) => (
+            <div key={index} className="particle absolute top-0 left-0 z-0">
+              <Plus size={32} strokeWidth={0.3} />
+            </div>
+          ))}
+          {Array.from({ length: 25 }).map((_, index) => (
+            <div key={index} className="particle absolute top-0 left-0 z-0">
+              <Braces size={32} strokeWidth={0.3} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

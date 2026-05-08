@@ -61,7 +61,10 @@ export function Tape() {
     <section className="overflow-hidden">
       <div className="container">
         <div className="flex mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div ref={container} className="divide flex flex-none divide-x pr-6">
+          <div
+            ref={container}
+            className="divide flex flex-none divide-x divide-neutral-200 pr-6"
+          >
             {[...items, ...items].map((item, index) => (
               <div
                 key={index}
