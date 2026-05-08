@@ -1,4 +1,5 @@
 import { ArrowRight, Menu } from "lucide-react";
+import Link from "next/link";
 
 import { navLinks } from "./header";
 import { Button } from "./ui/button";
@@ -27,9 +28,9 @@ export function MobileMenu() {
           {navLinks.map((nv) => (
             <SheetClose asChild key={nv.href}>
               <Button asChild variant="link">
-                <a href={nv.href}>
+                <Link href={nv.href}>
                   {nv.label} <ArrowRight />
-                </a>
+                </Link>
               </Button>
             </SheetClose>
           ))}

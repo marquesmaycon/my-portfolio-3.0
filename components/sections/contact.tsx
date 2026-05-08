@@ -46,7 +46,7 @@ const ContactCard = ({ title, subtitle }: ContactCardProps) => {
         <div>Icon</div>
       </div>
       <div className="mt-auto">
-        <Button asChild variant="ghost">
+        <Button asChild variant="link">
           <span>
             Abrir <ArrowUpRight />
           </span>

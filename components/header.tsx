@@ -27,7 +27,7 @@ export function Header() {
   return (
     <header className="bg-background/5 fixed inset-x-0 z-50 flex h-12 backdrop-blur-sm lg:h-16">
       <div className="container flex flex-1 items-center">
-        <div className="flex h-full flex-1 items-center">
+        <div className="flex h-full flex-1 items-center font-medium">
           <span className="text-accent">maycon</span>_silva();
         </div>
 

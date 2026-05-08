@@ -15,6 +15,7 @@ import {
 gsap.registerPlugin(useGSAP);
 
 import gsap from "gsap";
+import Link from "next/link";
 import { useRef } from "react";
 
 import { Button } from "../ui/button";
@@ -124,11 +125,13 @@ export function Hero() {
           </div>
 
           <div className="space-x-4">
-            <Button size="xl">
-              Projetos <ArrowRight />
+            <Button size="xl" asChild>
+              <Link href="#project">
+                Projetos <ArrowRight />
+              </Link>
             </Button>
             <Button variant="outline" size="xl">
-              Contato
+              <Link href="#contact">Contato</Link>
             </Button>
           </div>
         </div>
