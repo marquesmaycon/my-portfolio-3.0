@@ -36,7 +36,9 @@ export function Header() {
         <div className="hidden h-full flex-1 items-center justify-center lg:flex">
           {navLinks.map((nv) => (
             <Button key={nv.href} variant="link" className="text-base" asChild>
-              <Link href={nv.href}>{nv.label}</Link>
+              <Link href={nv.href}>
+                <span className="scramble">{nv.label}</span>
+              </Link>
             </Button>
           ))}
         </div>

@@ -96,14 +96,21 @@ export function Hero() {
             </span> */}
           </div>
 
-          <div className="space-x-4">
-            <Button size="xl" asChild>
+          <div id="actions" className="space-x-4">
+            <Button size="xl" asChild className="font-heading">
               <Link href="#project">
-                Projetos <ArrowRight />
+                <span className="scramble">Projetos</span> <ArrowRight />
               </Link>
             </Button>
-            <Button variant="outline" size="xl">
-              <Link href="#contact">Contato</Link>
+            <Button
+              variant="outline"
+              size="xl"
+              asChild
+              className="font-heading"
+            >
+              <Link href="#contact">
+                <span className="scramble">Contato</span>
+              </Link>
             </Button>
           </div>
         </div>
