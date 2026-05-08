@@ -29,10 +29,6 @@ export function Hero() {
               Meu nome é Maycon, sou um desenvolvedor de software focado em
               experiências fluidas e impactantes.
             </p>
-
-            {/* <span className="text-muted-foreground">
-              Disponível para novos projetos
-            </span> */}
           </div>
 
           <div id="actions" className="space-x-4">

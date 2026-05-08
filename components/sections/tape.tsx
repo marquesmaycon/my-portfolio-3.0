@@ -58,18 +58,23 @@ export function Tape() {
   );
 
   return (
-    <section className="overflow-hidden">
-      <div className="container">
-        <div className="flex mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div ref={container} className="divide flex flex-none divide-x pr-6">
-            {[...items, ...items].map((item, index) => (
-              <div
-                key={index}
-                className="flex h-20 items-center px-6 text-lg tracking-widest whitespace-nowrap uppercase"
-              >
-                {item}
-              </div>
-            ))}
+    <section className="bg-border overflow-hidden">
+      <div className="bg-background my-2 border">
+        <div className="container">
+          <div className="flex mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div
+              ref={container}
+              className="divide flex flex-none divide-x pr-6"
+            >
+              {[...items, ...items].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex h-20 items-center px-6 text-lg tracking-widest whitespace-nowrap uppercase"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
