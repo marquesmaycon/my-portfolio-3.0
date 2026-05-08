@@ -65,7 +65,7 @@ export function Tape() {
             {[...items, ...items].map((item, index) => (
               <div
                 key={index}
-                className="flex h-20 items-center px-6 text-lg whitespace-nowrap"
+                className="flex h-20 items-center px-6 text-lg tracking-widest whitespace-nowrap uppercase"
               >
                 {item}
               </div>

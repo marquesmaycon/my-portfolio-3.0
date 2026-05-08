@@ -25,10 +25,12 @@ export const navLinks = [
 
 export function Header() {
   return (
-    <header className="bg-background/5 fixed inset-x-0 z-50 flex h-12 backdrop-blur-sm lg:h-16">
+    <header className="bg-background/10 fixed inset-x-0 z-50 flex h-12 backdrop-blur-sm lg:h-16">
       <div className="container flex flex-1 items-center">
-        <div className="flex h-full flex-1 items-center font-medium">
-          <span className="text-accent">maycon</span>_silva();
+        <div className="flex-1 font-medium">
+          <span className="text-accent">function</span>
+          {"  "} maycon_silva
+          <span className="text-accent">()</span>;
         </div>
 
         <div className="hidden h-full flex-1 items-center justify-center lg:flex">
