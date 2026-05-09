@@ -2,6 +2,7 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Plus, X } from "lucide-react";
 import { useRef } from "react";
 
 gsap.registerPlugin(useGSAP);
@@ -37,7 +38,7 @@ export function Tape() {
 
       const tween = gsap.to(track, {
         x: -width,
-        duration: 30,
+        duration: 35,
         ease: "none",
         repeat: -1,
       });
@@ -58,20 +59,18 @@ export function Tape() {
   );
 
   return (
-    <section className="bg-accent/15 overflow-hidden">
-      <div className="bg-background my-2 border">
+    <section className="bg-accent/16 overflow-hidden">
+      <div className="bg-background my-4">
         <div className="container">
           <div className="flex mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-            <div
-              ref={container}
-              className="divide flex flex-none divide-x pr-6"
-            >
+            <div ref={container} className="divide flex flex-none gap-12 pr-12">
               {[...items, ...items].map((item, index) => (
                 <div
                   key={index}
-                  className="flex h-20 items-center px-6 text-lg tracking-widest whitespace-nowrap uppercase"
+                  className="flex h-20 items-center gap-12 text-lg tracking-widest whitespace-nowrap uppercase"
                 >
-                  {item}
+                  <span>{item}</span>
+                  <Plus className="text-muted-foreground my-auto" />
                 </div>
               ))}
             </div>

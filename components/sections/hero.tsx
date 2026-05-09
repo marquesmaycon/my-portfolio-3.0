@@ -8,7 +8,7 @@ import { useRef } from "react";
 
 import { heroWords, scrambleChars } from "@/lib/constanst";
 
-import { SparklesExposion } from "../sparkles-explosion";
+import { ParticlesExposion } from "../particles-explosion";
 import { Button } from "../ui/button";
 
 export function Hero() {
@@ -40,8 +40,8 @@ export function Hero() {
       <div className="container">
         <div className="z-10 flex flex-col gap-8 md:text-center lg:gap-16">
           <div>
-            <h3 className="font-heading text-md mb-6 font-medium uppercase lg:text-lg">
-              Disponível para novos projetos
+            <h3 className="font-heading text-md mb-6 font-medium uppercase lg:text-base">
+              Desenvolvedor Full-Stack
             </h3>
             <h1 className="font-heading text-5xl font-bold lg:text-6xl lg:leading-20">
               Construindo{" "}
@@ -80,7 +80,7 @@ export function Hero() {
           </div>
         </div>
 
-        <SparklesExposion />
+        <ParticlesExposion />
       </div>
     </section>
   );

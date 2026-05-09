@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { Braces, Plus } from "lucide-react";
 import { useRef } from "react";
 
-export function SparklesExposion() {
+export function ParticlesExposion() {
   const container = useRef<HTMLDivElement>(null);
 
   useGSAP(

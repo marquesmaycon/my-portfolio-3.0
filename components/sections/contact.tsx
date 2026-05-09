@@ -9,15 +9,15 @@ export function Contact() {
     <section id="contact">
       <div className="container">
         <div className="lg:grid lg:grid-cols-3">
-          <div className="row-span-2 min-h-64 w-full border-b py-4 md:border-r md:border-l md:p-8">
+          <div className="row-span-2 min-h-64 w-full border-b py-4 md:border-r md:border-b-0 md:p-8">
             <span className="text-muted-foreground">Entre em contato</span>
-            <h4 className="font-heading mt-4 text-3xl font-normal text-pretty sm:max-w-2/3 md:max-w-none">
+            <h4 className="font-heading mt-4 text-3xl leading-12 font-normal text-pretty sm:max-w-2/3 md:max-w-none">
               Vamos criar algo{" "}
               <span className="text-accent font-extrabold">incrível</span>{" "}
-              juntos
+              juntos.
             </h4>
           </div>
-          <div className="bg-border col-span-2 grid gap-px md:grid-cols-2 md:border-r">
+          <div className="bg-border col-span-2 grid gap-px md:grid-cols-2 md:border-r md:border-l lg:border-l-0">
             {contacts.map(({ link, title, subtitle }) => (
               <a
                 key={link}

@@ -1,25 +1,64 @@
-import { ArrowUpRight, X } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import { ArrowUpRight, Plus } from "lucide-react";
 import Image from "next/image";
+import { useRef } from "react";
 
 import { portfolioProjects } from "@/lib/constanst";
+import { gsap } from "@/lib/gsap";
 
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 
 export function Projects() {
+  const iconRef = useRef<SVGSVGElement>(null);
+
+  useGSAP(() => {
+    let lastScroll = window.scrollY;
+
+    const rotate = (direction: "up" | "down") => {
+      gsap.to(iconRef.current, {
+        rotate: direction === "down" ? "+=90" : "-=90",
+        duration: 0.8,
+        ease: "power1.out",
+      });
+    };
+
+    const onScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > lastScroll) {
+        rotate("down");
+      } else if (currentScroll < lastScroll) {
+        rotate("up");
+      }
+
+      lastScroll = currentScroll;
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <section id="projects">
       <div className="container py-8 lg:py-10">
-        <h6 className="mb-6 flex items-center justify-center">
-          <span>------------</span>
-          <X />
-          <span>------------</span>
-        </h6>
+        <div className="mb-6 flex items-center justify-center font-light">
+          <span className="text-nowrap text-clip">---------</span>
+          <Plus
+            ref={iconRef}
+            strokeWidth={0.4}
+            className="mx-1 size-10 shrink-0 md:size-14"
+          />
+          <span className="text-nowrap text-ellipsis">---------</span>
+        </div>
         <div>
-          <h2 className="font-heading mb-4 text-center text-3xl md:text-5xl">
+          <h2 className="font-heading mb-4 text-center text-3xl font-bold md:text-5xl">
             Projetos em Destaque
           </h2>
-          <p className="text-center text-balance md:text-lg lg:text-xl">
+          <p className="text-muted-foreground text-center text-balance md:text-lg">
             Esses são meus projetos mais relevantes e completos
           </p>
         </div>
