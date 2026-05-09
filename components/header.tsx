@@ -1,27 +1,10 @@
 import Link from "next/link";
 
+import { navLinks } from "@/lib/constans";
+
 import { MobileMenu } from "./mobile-menu";
 import { ThemeSwitcher } from "./theme-switcher";
 import { Button } from "./ui/button";
-
-export const navLinks = [
-  {
-    label: "Início",
-    href: "#home",
-  },
-  {
-    label: "Sobre",
-    href: "#about",
-  },
-  {
-    label: "Projetos",
-    href: "#projects",
-  },
-  {
-    label: "Contato",
-    href: "#contact",
-  },
-];
 
 export function Header() {
   return (

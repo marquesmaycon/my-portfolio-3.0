@@ -1,7 +1,8 @@
 import { ArrowRight, Menu } from "lucide-react";
 import Link from "next/link";
 
-import { navLinks } from "./header";
+import { navLinks } from "@/lib/constans";
+
 import { Button } from "./ui/button";
 import {
   Sheet,

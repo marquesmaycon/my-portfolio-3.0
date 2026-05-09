@@ -8,6 +8,7 @@ import { Footer } from "@/components/sections/footer";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
 import { Tape } from "@/components/sections/tape";
+import { scrambleChars } from "@/lib/constans";
 import { gsap } from "@/lib/gsap";
 
 export default function Home() {
@@ -30,9 +31,8 @@ export default function Home() {
           duration: 0.6,
           scrambleText: {
             text: original,
-            chars: "X0#+1%",
+            chars: scrambleChars,
             speed: 0.4,
-            tweenLength: false,
           },
         });
       };
