@@ -1,7 +1,7 @@
 import { ArrowUpRight, X } from "lucide-react";
 import Image from "next/image";
 
-import { portfolioProjects } from "@/lib/constans";
+import { portfolioProjects } from "@/lib/constanst";
 
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";

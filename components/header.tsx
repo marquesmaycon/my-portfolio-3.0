@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { navLinks } from "@/lib/constans";
+import { navLinks } from "@/lib/constanst";
 
 import { MobileMenu } from "./mobile-menu";
 import { ThemeSwitcher } from "./theme-switcher";

@@ -1,4 +1,4 @@
-export const scrambleChars = "01X#+%=$";
+export const scrambleChars = "01#&%+";
 
 export const navLinks = [
   {
@@ -17,6 +17,16 @@ export const navLinks = [
     label: "Contato",
     href: "#contact",
   },
+];
+
+export const heroWords = [
+  "soluções",
+  "experiências",
+  "produtos",
+  "spftwares",
+  "jornadas",
+  "ideias",
+  "conexões",
 ];
 
 export const contacts = [

@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 
-import { contacts } from "@/lib/constans";
+import { contacts } from "@/lib/constanst";
 
 import { Button } from "../ui/button";
 

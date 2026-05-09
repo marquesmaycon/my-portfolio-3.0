@@ -6,12 +6,10 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 
-import { scrambleChars } from "@/lib/constans";
+import { heroWords, scrambleChars } from "@/lib/constanst";
 
 import { SparklesExposion } from "../sparkles-explosion";
 import { Button } from "../ui/button";
-
-const words = ["produtos", "experiências", "soluções", "interfaces"];
 
 export function Hero() {
   const textRef = useRef<HTMLSpanElement>(null);
@@ -21,7 +19,7 @@ export function Hero() {
       repeat: -1,
     });
 
-    words.forEach((word) => {
+    heroWords.forEach((word) => {
       tl.to(textRef.current, {
         duration: 2,
         scrambleText: {
@@ -48,7 +46,7 @@ export function Hero() {
             <h1 className="font-heading text-5xl font-bold lg:text-6xl lg:leading-20">
               Construindo{" "}
               <span className="text-accent" ref={textRef}>
-                {words[0]}
+                {heroWords[0]}
               </span>{" "}
               <br />
               para a web.

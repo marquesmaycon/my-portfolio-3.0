@@ -8,7 +8,7 @@ import { Footer } from "@/components/sections/footer";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
 import { Tape } from "@/components/sections/tape";
-import { scrambleChars } from "@/lib/constans";
+import { scrambleChars } from "@/lib/constanst";
 import { gsap } from "@/lib/gsap";
 
 export default function Home() {

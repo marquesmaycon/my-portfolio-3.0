@@ -1,7 +1,7 @@
 import { ArrowRight, Menu } from "lucide-react";
 import Link from "next/link";
 
-import { navLinks } from "@/lib/constans";
+import { navLinks } from "@/lib/constanst";
 
 import { Button } from "./ui/button";
 import {
