@@ -66,7 +66,7 @@ export function ParticlesExposion() {
       ref={container}
       className="pointer-events-none absolute inset-0 -z-5 overflow-hidden mask-[radial-gradient(circle_at_center,transparent_0%,transparent_18%,black_50%)]"
     >
-      {Array.from({ length: 45 }).map((_, index) => (
+      {Array.from({ length: 65 }).map((_, index) => (
         <div key={index} className="particle absolute z-0">
           <Plus size={32} strokeWidth={0.4} />
         </div>

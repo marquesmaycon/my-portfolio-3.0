@@ -43,8 +43,8 @@ export function Projects() {
   }, []);
 
   return (
-    <section id="projects">
-      <div className="container py-8 lg:py-10">
+    <section id="projects" className="py-8">
+      <div className="container lg:py-10">
         <div className="mb-6 flex items-center justify-center font-light">
           <span className="text-nowrap text-clip">---------</span>
           <Plus

@@ -23,7 +23,7 @@ export const heroWords = [
   "soluções",
   "experiências",
   "produtos",
-  "spftwares",
+  "softwares",
   "jornadas",
   "ideias",
   "conexões",
