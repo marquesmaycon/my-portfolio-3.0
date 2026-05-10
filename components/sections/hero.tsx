@@ -2,7 +2,7 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
 
@@ -63,8 +63,8 @@ export function Hero() {
 
           <div className="space-x-4">
             <Button size="xl" asChild className="font-heading">
-              <Link href="#project">
-                <span className="scramble">Projetos</span> <ArrowRight />
+              <Link href="#projects">
+                <span className="scramble">Projetos</span> <ArrowDown />
               </Link>
             </Button>
             <Button
