@@ -39,6 +39,20 @@ export default function Home() {
 
       button.addEventListener("mouseenter", enter);
     });
+
+    gsap.utils.toArray<HTMLElement>(".fade-up").forEach((el) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+        },
+        opacity: 0,
+        y: 40,
+        duration: 0.6,
+        ease: "circle",
+        stagger: 0.1,
+      });
+    });
   });
 
   return (

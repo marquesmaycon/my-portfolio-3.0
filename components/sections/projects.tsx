@@ -45,7 +45,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-8">
       <div className="container lg:py-10">
-        <div className="mb-6 flex items-center justify-center font-light">
+        <div className="fade-up mb-6 flex items-center justify-center font-light">
           <span className="text-nowrap text-clip">---------</span>
           <Plus
             ref={iconRef}
@@ -55,10 +55,10 @@ export function Projects() {
           <span className="text-nowrap text-ellipsis">---------</span>
         </div>
         <div>
-          <h2 className="font-heading mb-4 text-center text-3xl font-bold md:text-5xl">
+          <h2 className="font-heading fade-up mb-4 text-center text-3xl font-bold md:text-5xl">
             Projetos em Destaque
           </h2>
-          <p className="text-muted-foreground text-center text-balance md:text-lg">
+          <p className="text-muted-foreground fade-up text-center text-balance md:text-lg">
             Esses são meus projetos mais relevantes e completos
           </p>
         </div>
@@ -79,7 +79,7 @@ export function Projects() {
             ) => (
               <div
                 key={title}
-                className="bg-background sticky overflow-hidden border px-4 pt-4 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+                className="bg-background fade-up sticky overflow-hidden border px-4 pt-4 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
                 style={{ top: `${64 + index * 20}px` }}
               >
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
