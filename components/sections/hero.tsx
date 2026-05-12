@@ -13,69 +13,86 @@ import { ParticlesExposion } from "../particles-explosion";
 import { Button } from "../ui/button";
 
 export function Hero() {
-  const textRef = useRef<HTMLSpanElement>(null);
+  const container = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    const tl = gsap.timeline({ repeat: -1 });
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({ repeat: -1 });
 
-    heroWords.forEach((word) => {
-      tl.to(textRef.current, {
-        duration: 2,
-        scrambleText: {
-          text: word,
-          chars: scrambleChars,
-          speed: 0.4,
+      heroWords.forEach((word) => {
+        tl.to("span.text-accent", {
+          duration: 2,
+          scrambleText: {
+            text: word,
+            chars: scrambleChars,
+            speed: 0.4,
+          },
+        });
+
+        tl.to({}, { duration: 1.5 });
+      });
+
+      gsap.from(".fade-in-h1", {
+        ...fadeAnimationBase,
+        x: 100,
+        delay: 0.6,
+      });
+
+      SplitText.create(".fade-text", {
+        type: "lines, words",
+        mask: "lines",
+        autoSplit: true,
+        onSplit(self) {
+          return gsap.from(self.words, {
+            duration: 0.4,
+            y: 80,
+            autoAlpha: 0,
+            stagger: 0.01,
+            delay: 0.6,
+          });
         },
       });
 
-      tl.to({}, { duration: 1.5 });
-    });
+      gsap.from("a[href='#projects']", {
+        x: "-100%",
+        duration: 1,
+        stagger: 0.2,
+        delay: 0.6,
+        ease: "circ.out",
+      });
 
-    gsap.from(".fade-in-title", {
-      ...fadeAnimationBase,
-      x: 100,
-      delay: 0.6,
-    });
-
-    SplitText.create(".fade-in-b", {
-      type: "lines, words",
-      mask: "lines",
-      autoSplit: true,
-      onSplit(self) {
-        return gsap.from(self.words, {
-          duration: 0.4,
-          y: 80,
-          autoAlpha: 0,
-          stagger: 0.02,
-          delay: 0.6,
-        });
-      },
-    });
-  });
+      gsap.from("a[href='#contact']", {
+        y: "100%",
+        duration: 1,
+        stagger: 0.2,
+        delay: 0.6,
+        ease: "circ.out",
+      });
+    },
+    { scope: container },
+  );
 
   return (
     <section
       id="home"
       className="relative flex h-screen items-center overflow-hidden"
+      ref={container}
     >
       <div className="container">
         <div className="z-10 flex flex-col gap-8 md:text-center lg:gap-16">
           <div>
-            <h3 className="font-heading fade-in-b text-md mb-6 font-medium uppercase lg:text-base">
+            <h3 className="font-heading fade-text text-md mb-6 font-medium uppercase lg:text-base">
               Desenvolvedor Full-Stack
             </h3>
-            <h1 className="font-heading fade-in-title text-5xl font-bold lg:text-6xl lg:leading-20">
-              Construindo{" "}
-              <span className="text-accent" ref={textRef}>
-                {heroWords[0]}
-              </span>{" "}
+            <h1 className="font-heading fade-in-h1 text-5xl font-bold lg:text-6xl lg:leading-20">
+              Construindo <span className="text-accent">{heroWords[0]}</span>{" "}
               <br />
               para a web.
             </h1>
           </div>
 
           <div className="mx-auto text-balance lg:max-w-2/3">
-            <p className="text-muted-foreground fade-in-b leading-7">
+            <p className="text-muted-foreground fade-text leading-7">
               Meu nome é Maycon, sou um desenvolvedor de software especializado
               em construir interfaces modernas, APIs robustas e experiências web
               de alta performance.
@@ -83,19 +100,23 @@ export function Hero() {
           </div>
 
           <div className="space-x-4 overflow-hidden md:mx-auto md:w-fit">
-            <Button size="xl" asChild className="font-heading">
+            <Button
+              size="xl"
+              asChild
+              className="font-heading fade-buttons transition-colors"
+            >
               <Link href="#projects">
-                <span className="">Projetos</span> <ArrowDown />
+                <span className="scramble">Projetos</span> <ArrowDown />
               </Link>
             </Button>
             <Button
               variant="outline"
               size="xl"
               asChild
-              className="font-heading bg-background/10 backdrop-blur-md"
+              className="font-heading bg-background/10 fade-buttons backdrop-blur-md transition-colors"
             >
               <Link href="#contact">
-                <span className="">Contato</span>
+                <span className="scramble">Contato</span>
               </Link>
             </Button>
           </div>
