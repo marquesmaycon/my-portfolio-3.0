@@ -79,7 +79,7 @@ export function Projects() {
             ) => (
               <div
                 key={title}
-                className="bg-background fade-up sticky overflow-hidden border px-4 pt-4 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+                className="bg-background sticky overflow-hidden border px-4 pt-4 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
                 style={{ top: `${64 + index * 20}px` }}
               >
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
