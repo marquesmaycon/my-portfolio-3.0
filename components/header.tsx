@@ -3,7 +3,7 @@ import gsap from "gsap";
 import Link from "next/link";
 import { useRef } from "react";
 
-import { navLinks } from "@/lib/constanst";
+import { fadeAnimationBase, navLinks } from "@/lib/constanst";
 
 import { MobileMenu } from "./mobile-menu";
 import { ThemeSwitcher } from "./theme-switcher";
@@ -14,19 +14,13 @@ export function Header() {
 
   useGSAP(
     () => {
-      const fade = {
-        opacity: 0,
-        duration: 0.6,
-        ease: "power3.out",
-      };
-
       gsap.from("h3", {
-        ...fade,
+        ...fadeAnimationBase,
         x: -40,
       });
 
       gsap.from(".scramble, .gsap-fade-in", {
-        ...fade,
+        ...fadeAnimationBase,
         x: 30,
         stagger: 0.08,
         delay: 0.15,

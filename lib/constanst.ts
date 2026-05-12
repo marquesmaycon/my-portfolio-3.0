@@ -1,5 +1,11 @@
 export const scrambleChars = "01#&%+";
 
+export const fadeAnimationBase = {
+  opacity: 0,
+  duration: 0.6,
+  ease: "power3.out",
+};
+
 export const navLinks = [
   {
     label: "Início",
