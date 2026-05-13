@@ -1,3 +1,12 @@
+import {
+  Anvil,
+  BookImage,
+  Brain,
+  ShoppingBag,
+  UserRoundKey,
+  Webhook,
+} from "lucide-react";
+
 export const scrambleChars = "01#&%+";
 
 export const fadeAnimationBase = {
@@ -78,8 +87,9 @@ export const portfolioProjects = [
       "Projeto full-stack que permite a criação de salas de conhecimento, onde usuários podem adicionar conteúdos em texto ou áudio e, a partir desse contexto, outras pessoas fazem perguntas que são respondidas por uma IA exclusivamente com base no material fornecido.",
     repository: "https://github.com/marquesmaycon/ask-room",
     demo: "https://ask-room.mklly.com.br/",
+
+    icon: Brain,
     image: "/ask-room.png",
-    wip: false,
   },
   {
     tag: "TurboRepo + AdonisJS + TanStack Start",
@@ -99,6 +109,8 @@ export const portfolioProjects = [
       "Projeto monorepo para gerenciamento de produtos e matérias-primas. Forjar um produto consome insumos, atualizando o estoque e interferindo em outras produções.",
     repository: "https://github.com/marquesmaycon/stock-forge",
     demo: "https://stock-forge.mklly.com.br/",
+
+    icon: Anvil,
     image: "/stock-forge.png",
   },
   {
@@ -118,6 +130,8 @@ export const portfolioProjects = [
       "Aplicação moderna desenvolvida para demonstrar um fluxo completo de checkout com autenticação, carrinho e múltiplos métodos de pagamento.",
     demo: "https://marketplace-nextjs.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/marketplace-nextjs",
+
+    icon: ShoppingBag,
     image: "/marketplace-nextjs.png",
   },
   {
@@ -139,6 +153,8 @@ export const portfolioProjects = [
       "SaaS multi-tenant com autenticação robusta e sistema de autorização baseado em RBAC (Role-Based Access Control). Desenvolvido com as melhores práticas e arquitetura monorepo para máxima escalabilidade e reutilização de código.",
     demo: null,
     repository: "https://github.com/marquesmaycon/next-saas-rbac",
+
+    icon: UserRoundKey,
     image: "/next-saas-rbac.png",
   },
   {
@@ -159,6 +175,8 @@ export const portfolioProjects = [
       "Um sistema de rastreamento de hábitos. Adicione hábitos, configure o dia da semana, acompanhe seu progresso, dados persistidos no banco de dados.",
     demo: "https://habit-tracker.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/habit-tracker",
+
+    icon: BookImage,
     image: "/habit-tracker.png",
   },
   {
@@ -170,6 +188,7 @@ export const portfolioProjects = [
       "Sistema de gerenciamento de usuários que demonstra implementação de autenticação, CRUD de usuários e gerenciamento de estado e cache com TanStack Query.",
     demo: "https://dummy-users.mklly.com.br/",
     repository: "https://github.com/marquesmaycon/dummy-users",
+    icon: Webhook,
     image: "/dummy-users.png",
   },
 ] as const;

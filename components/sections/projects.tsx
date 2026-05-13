@@ -1,6 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import { ArrowUpRight, Plus } from "lucide-react";
-import Image from "next/image";
+import { ArrowUpRight, BadgeQuestionMark, Plus } from "lucide-react";
 import { useRef } from "react";
 
 import { portfolioProjects } from "@/lib/constanst";
@@ -62,7 +61,7 @@ export function Projects() {
             Esses são meus projetos mais relevantes e completos
           </p>
         </div>
-        <div className="mt-10 flex flex-col md:mt-20">
+        <ul className="mt-10 flex flex-col gap-8 md:mt-20">
           {portfolioProjects.map(
             (
               {
@@ -73,17 +72,17 @@ export function Projects() {
                 demo,
                 description,
                 repository,
-                image,
+                icon: Icon,
               },
               index,
             ) => (
-              <div
+              <li
                 key={title}
-                className="bg-background sticky overflow-hidden border px-4 pt-4 pb-0 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+                className="bg-background group sticky overflow-hidden border px-4 py-4 md:px-10 md:py-12 lg:px-20 lg:py-16"
                 style={{ top: `${64 + index * 20}px` }}
               >
-                <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-                  <div className="relative space-y-4 md:space-y-8 lg:pb-16">
+                <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-16">
+                  <div className="relative space-y-4 md:space-y-8 lg:pb-16 lg:group-even:order-2">
                     <div>
                       <div className="inline-flex w-full items-center justify-between gap-2 text-xs tracking-widest uppercase md:justify-start md:text-sm">
                         <span>{tag}</span>
@@ -131,20 +130,14 @@ export function Projects() {
                       )}
                     </div>
                   </div>
-                  <div className="relative">
-                    <Image
-                      src={image}
-                      alt={title}
-                      width={800}
-                      height={800}
-                      className="mt-8 -mb-4 w-200 border object-cover object-top-left transition hover:grayscale-0 md:mb-0 lg:absolute lg:mt-0 lg:h-full lg:w-162.5 lg:max-w-none lg:grayscale"
-                    />
+                  <div className="bg-muted flex items-center justify-center border">
+                    <Icon className="text-muted-foreground size-1/2" />
                   </div>
                 </div>
-              </div>
+              </li>
             ),
           )}
-        </div>
+        </ul>
       </div>
     </section>
   );
