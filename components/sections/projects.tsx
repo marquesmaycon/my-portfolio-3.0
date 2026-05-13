@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import { ArrowUpRight, BadgeQuestionMark, Plus } from "lucide-react";
+import { ArrowUpRight, Plus } from "lucide-react";
 import { useRef } from "react";
 
 import { portfolioProjects } from "@/lib/constanst";
@@ -130,7 +130,7 @@ export function Projects() {
                       )}
                     </div>
                   </div>
-                  <div className="bg-muted flex items-center justify-center border">
+                  <div className="bg-muted flex items-center justify-center border p-4">
                     <Icon className="text-muted-foreground size-1/2" />
                   </div>
                 </div>
