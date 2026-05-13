@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 My Portfolio 3.0
 
-## Getting Started
+Portfólio pessoal moderno construído com **Next.js 16**, **React 19** e **TypeScript**, com foco em animações, experiência fluida e design responsivo.
 
-First, run the development server:
+## 📖 Sobre o Projeto
+
+Este projeto apresenta um site de portfólio que destaca:
+
+- Seções de apresentação, sobre, projetos, e contato
+- Animações de entrada e interações com **GSAP**
+- Tema claro/escuro com persistência no navegador
+- Layout responsivo e experiência mobile-first
+- Components reutilizáveis baseados em **shadcn UI** e **Radix UI**
+
+## ✨ Principais Funcionalidades
+
+- 🎨 Tema claro/escuro com `next-themes`
+- ⚡ Animações avançadas com `gsap`
+- 📱 Layout responsivo e navegação otimizada para mobile
+- 🧩 Cards de projetos com links para repositórios e demos
+- 📬 Seção de contato com links externos para redes e e-mail
+- 🔍 Estrutura de componentes organizada e extensível
+
+## 🛠️ Stack Tecnológica
+
+- **Next.js 16**
+- **React 19**
+- **TypeScript 5**
+- **Tailwind CSS 4**
+- **GSAP** para animações
+- **next-themes** para gerenciamento de tema
+- **shadcn UI** e **Radix UI** para UI base
+- **Lucide React** para ícones
+- **clsx** e **cva** para estilos condicionais
+
+## 🚀 Começando
+
+### Pré-requisitos
+
+- Node.js 18+
+- npm
+
+### Instalação
+
+```bash
+npm install
+```
+
+### Executar em desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000 no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build para produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## 📁 Estrutura principal
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` - rotas e layout do Next.js
+- `components/` - componentes reutilizáveis e seções da página
+- `lib/` - utilitários, configurações de GSAP e constantes
+- `public/` - ativos públicos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Scripts disponíveis
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev      # Iniciar servidor de desenvolvimento
+npm run build    # Criar build de produção
+npm run start    # Executar build em produção
+npm run lint     # Verificar qualidade do código com ESLint
+```
 
-## Deploy on Vercel
+## 💡 Observações
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- É um site estático sem backend integrado.
+- A navegação principal é interna e via âncoras para seções da mesma página.
+- O projeto utiliza fontes do Google via `next/font`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👨‍💻 Autor
+
+<div align="center">
+  <img src="https://github.com/marquesmaycon.png" width="100px" style="border-radius: 50%"/>
+  <br/>
+  <strong>Maycon Marques</strong>
+  <br/>
+  <br/>
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayconhenrique/)
+  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/marquesmaycon)
+  [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mayconmarquesh@gmail.com)
+
+  ### Feito com ❤️ e muita 🎵
+</div>
