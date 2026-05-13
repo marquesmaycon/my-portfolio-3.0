@@ -16,8 +16,8 @@ export function Projects() {
 
     const rotate = (direction: "up" | "down") => {
       gsap.to(iconRef.current, {
-        rotate: direction === "down" ? "+=90" : "-=90",
-        duration: 0.8,
+        rotate: direction === "down" ? "+=60" : "-=60",
+        duration: 0.5,
         ease: "power1.out",
       });
     };
@@ -130,8 +130,11 @@ export function Projects() {
                       )}
                     </div>
                   </div>
-                  <div className="bg-muted flex items-center justify-center border p-4">
-                    <Icon className="text-muted-foreground size-1/2" />
+                  <div className="bg-accent/8 group-hover:bg-accent/32 flex items-center justify-center border p-4 transition-colors duration-800">
+                    <Icon
+                      className="group-hover:text-foreground size-1/2 text-indigo-300 transition-all duration-800 group-hover:scale-125"
+                      strokeWidth={0.4}
+                    />
                   </div>
                 </div>
               </li>
