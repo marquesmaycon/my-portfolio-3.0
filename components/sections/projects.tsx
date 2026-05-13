@@ -113,7 +113,7 @@ export function Projects() {
                       <p className="text-sm md:text-base">{description}</p>
                     </div>
 
-                    <div className="space-x-4">
+                    <div className="flex flex-wrap items-center gap-2 md:gap-4">
                       <Button asChild size="xl">
                         <a href={repository} target="_blank">
                           <span className="scramble">Ver Repositório</span>

@@ -44,7 +44,7 @@ export default function Home() {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
-          start: "top 80%",
+          start: "top 95%",
         },
         opacity: 0,
         y: 40,

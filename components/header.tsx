@@ -55,7 +55,9 @@ export function Header() {
           <ThemeSwitcher />
         </div>
 
-        <MobileMenu />
+        <div className="gsap-fade-in">
+          <MobileMenu />
+        </div>
       </div>
     </header>
   );
