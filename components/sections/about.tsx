@@ -81,7 +81,7 @@ export function About() {
               evoluir.
             </p>
 
-            <div className="bg-border stagger-fade grid gap-px overflow-hidden border sm:grid-cols-3">
+            <div className="stagger-fade grid overflow-hidden border sm:grid-cols-3 [&>.stagger-item+*]:border-t sm:[&>.stagger-item+*]:border-t-0 sm:[&>.stagger-item+*]:border-l">
               {aboutHighlights.map(({ value, label }) => (
                 <div key={value} className="stagger-item bg-background p-4">
                   <strong className="font-heading text-accent text-2xl">
@@ -96,7 +96,7 @@ export function About() {
           </div>
 
           <div className="grid gap-6">
-            <div className="fade-right bg-border stagger-fade grid gap-px overflow-hidden border md:grid-cols-3">
+            <div className="fade-right stagger-fade grid overflow-hidden border md:grid-cols-3 [&>.stagger-item+*]:border-t md:[&>.stagger-item+*]:border-t-0 md:[&>.stagger-item+*]:border-l">
               {aboutFocus.map(({ title, description, icon: Icon }) => (
                 <article
                   key={title}
