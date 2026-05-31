@@ -1,89 +1,71 @@
-# 🌐 My Portfolio 3.0
+# My Portfolio 3.0
 
-Portfólio pessoal moderno construído com **Next.js 16**, **React 19** e **TypeScript**, com foco em animações, experiência fluida e design responsivo.
+Versao atual do meu portfolio pessoal, construida para apresentar projetos, habilidades e trajetoria com uma experiencia visual moderna.
 
-## 📖 Sobre o Projeto
+![Next.js 16](https://img.shields.io/badge/Nextjs_16-20232A?style=flat-square)
+![React 19](https://img.shields.io/badge/React_19-20232A?style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-20232A?style=flat-square)
+![GSAP](https://img.shields.io/badge/GSAP-20232A?style=flat-square)
+![Radix UI](https://img.shields.io/badge/Radix_UI-20232A?style=flat-square)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-20232A?style=flat-square)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-20232A?style=flat-square)
 
-Este projeto apresenta um site de portfólio que destaca:
+## Demo
 
-- Seções de apresentação, sobre, projetos, e contato
-- Animações de entrada e interações com **GSAP**
-- Tema claro/escuro com persistência no navegador
-- Layout responsivo e experiência mobile-first
-- Components reutilizáveis baseados em **shadcn UI** e **Radix UI**
+Este projeto nao possui demo publica ativa no momento.
 
-## ✨ Principais Funcionalidades
+## Sobre
 
-- 🎨 Tema claro/escuro com `next-themes`
-- ⚡ Animações avançadas com `gsap`
-- 📱 Layout responsivo e navegação otimizada para mobile
-- 🧩 Cards de projetos com links para repositórios e demos
-- 📬 Seção de contato com links externos para redes e e-mail
-- 🔍 Estrutura de componentes organizada e extensível
+Versao atual do meu portfolio pessoal, construida para apresentar projetos, habilidades e trajetoria com uma experiencia visual moderna.
 
-## 🛠️ Stack Tecnológica
+O objetivo deste repositorio e demonstrar uma implementacao clara, organizada e facil de avaliar, com documentacao objetiva para recrutadores e pessoas tecnicas entenderem rapidamente o contexto do projeto.
+
+## Funcionalidades
+
+- Apresentacao profissional.
+- Secao de projetos.
+- Animacoes com GSAP.
+- Tema claro/escuro.
+- Componentes acessiveis.
+- Layout responsivo.
+
+## Stack
 
 - **Next.js 16**
 - **React 19**
-- **TypeScript 5**
-- **Tailwind CSS 4**
-- **GSAP** para animações
-- **next-themes** para gerenciamento de tema
-- **shadcn UI** e **Radix UI** para UI base
-- **Lucide React** para ícones
-- **clsx** e **cva** para estilos condicionais
+- **TypeScript**
+- **GSAP**
+- **Radix UI**
+- **shadcn/ui**
+- **Tailwind CSS**
 
-## 🚀 Começando
-
-### Pré-requisitos
-
-- Node.js 18+
-- npm
-
-### Instalação
+## Como executar
 
 ```bash
+git clone https://github.com/marquesmaycon/my-portfolio-3.0.git
+cd my-portfolio-3.0
 npm install
-```
-
-### Executar em desenvolvimento
-
-```bash
 npm run dev
 ```
 
-Abra http://localhost:3000 no navegador.
+## Scripts disponiveis
 
-### Build para produção
+- `npm run dev`
+- `npm run build`
+- `npm run start`
+- `npm run lint`
 
-```bash
-npm run build
-npm run start
-```
+## Destaques tecnicos
 
-## 📁 Estrutura principal
+- Portfolio atual e principal.
+- Uso de animacoes orientadas a narrativa.
+- Stack moderna com Next.js 16 e React 19.
 
-- `app/` - rotas e layout do Next.js
-- `components/` - componentes reutilizáveis e seções da página
-- `lib/` - utilitários, configurações de GSAP e constantes
-- `public/` - ativos públicos
+## Repositorio
 
-## 🧩 Scripts disponíveis
+[Acessar repositorio no GitHub](https://github.com/marquesmaycon/my-portfolio-3.0)
 
-```bash
-npm run dev      # Iniciar servidor de desenvolvimento
-npm run build    # Criar build de produção
-npm run start    # Executar build em produção
-npm run lint     # Verificar qualidade do código com ESLint
-```
-
-## 💡 Observações
-
-- É um site estático sem backend integrado.
-- A navegação principal é interna e via âncoras para seções da mesma página.
-- O projeto utiliza fontes do Google via `next/font`.
-
-## 👨‍💻 Autor
+---
 
 <div align="center">
   <img src="https://github.com/marquesmaycon.png" width="100px" style="border-radius: 50%"/>
@@ -91,10 +73,8 @@ npm run lint     # Verificar qualidade do código com ESLint
   <strong>Maycon Marques</strong>
   <br/>
   <br/>
-  
+
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayconhenrique/)
   [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/marquesmaycon)
   [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mayconmarquesh@gmail.com)
-
-  ### Feito com ❤️ e muita 🎵
 </div>
