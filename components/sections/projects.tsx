@@ -45,13 +45,13 @@ export function Projects() {
     <section id="projects" className="py-8">
       <div className="container lg:py-10">
         <div className="fade-up mb-6 flex items-center justify-center font-light">
-          <span className="text-nowrap text-clip">---------</span>
+          <PortfolioSeparator />
           <Plus
             ref={iconRef}
             strokeWidth={0.4}
             className="mx-1 size-10 shrink-0 md:size-14"
           />
-          <span className="text-nowrap text-ellipsis">---------</span>
+          <PortfolioSeparator />
         </div>
         <div>
           <h2 className="font-heading fade-up mb-4 text-center text-3xl font-bold md:text-5xl">
@@ -145,3 +145,11 @@ export function Projects() {
     </section>
   );
 }
+
+const PortfolioSeparator = () => (
+  <div className="flex items-center gap-px">
+    {Array.from({ length: 8 }).map((_, i) => (
+      <span key={i}>-</span>
+    ))}
+  </div>
+);
