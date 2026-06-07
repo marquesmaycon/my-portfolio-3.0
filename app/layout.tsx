@@ -2,6 +2,7 @@ import "./globals.css"
 
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google"
+import { NextIntlClientProvider } from "next-intl";
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
@@ -42,14 +43,16 @@ export default function RootLayout({
       )}
     >
       <body className="flex min-h-full flex-col">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <main>{children}</main>
-        </ThemeProvider>
+        <NextIntlClientProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <main>{children}</main>
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

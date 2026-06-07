@@ -5,7 +5,6 @@ import {
   Microwave,
   ShoppingBag,
   UserRoundKey,
-  Webhook,
 } from "lucide-react";
 
 export const scrambleChars = "01#&%+";

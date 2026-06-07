@@ -1,0 +1,260 @@
+{
+  "Metadata": {
+    "title": "Maycon Silva | Desenvolvedor Full Stack",
+    "description": "Construindo experiências digitais modernas com foco em performance, usabilidade e arquitetura escalável."
+  },
+  "Navigation": {
+    "brand": "maycon_silva",
+    "links": [
+      {
+        "label": "Início",
+        "href": "#home"
+      },
+      {
+        "label": "Sobre",
+        "href": "#about"
+      },
+      {
+        "label": "Projetos",
+        "href": "#projects"
+      },
+      {
+        "label": "Contato",
+        "href": "#contact"
+      }
+    ],
+    "mobileMenu": {
+      "title": "Navegação",
+      "description": "Navegue pelas seções"
+    }
+  },
+  "ThemeSwitcher": {
+    "toggleLabel": "Alternar tema",
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  },
+  "Hero": {
+    "role": "Desenvolvedor Full-Stack",
+    "titlePrefix": "Construindo",
+    "titleSuffix": "para a web.",
+    "words": [
+      "soluções",
+      "experiências",
+      "produtos",
+      "softwares",
+      "jornadas",
+      "ideias",
+      "conexões"
+    ],
+    "description": "Meu nome é Maycon, sou um desenvolvedor de software especializado em construir interfaces modernas, APIs robustas e experiências web de alta performance.",
+    "projectsButton": "Projetos",
+    "contactButton": "Contato"
+  },
+  "About": {
+    "eyebrow": "Sobre mim",
+    "title": "Código, produto e clareza caminhando juntos.",
+    "description": "Minha trajetória com tecnologia começou pela curiosidade de entender como uma ideia vira software de verdade. Desde então, venho construindo repertório entre estudo, faculdade e prática profissional para criar soluções úteis, bem pensadas e fáceis de evoluir.",
+    "highlights": [
+      {
+        "value": "2022",
+        "label": "comecei a estudar código e desenvolvimento web"
+      },
+      {
+        "value": "2023",
+        "label": "iniciei minha atuação profissional como Full Stack"
+      },
+      {
+        "value": "2025",
+        "label": "me formei em Análise e Desenvolvimento de Sistemas"
+      }
+    ],
+    "focus": [
+      {
+        "title": "Produto de ponta a ponta",
+        "description": "Gosto de transformar requisitos em jornadas claras, conectando regra de negócio, interface e dados com atenção aos detalhes."
+      },
+      {
+        "title": "Arquitetura limpa",
+        "description": "Priorizo performance, escalabilidade e código organizado para que o produto cresça sem virar um peso para evoluir."
+      },
+      {
+        "title": "Fluxo inteligente",
+        "description": "Trato IA como uma parceira de trabalho para pesquisar, prototipar e revisar melhor, mantendo decisão técnica no centro."
+      }
+    ],
+    "stackTitle": "Stack principal",
+    "stackDescription": "Trabalho principalmente com React, Next.js, TypeScript, Node.js, AdonisJS, infraestrutura em nuvem com AWS e bases relacionais, equilibrando experiência de uso, performance e manutenção.",
+    "techStack": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "AWS",
+      "PostgreSQL",
+      "Prisma",
+      "AdonisJS"
+    ],
+    "education": "Formado em Análise e Desenvolvimento de Sistemas (2025)"
+  },
+  "Projects": {
+    "title": "Projetos em Destaque",
+    "description": "Esses são meus projetos mais relevantes e completos",
+    "repositoryButton": "Ver Repositório",
+    "demoButton": "Ver Demo",
+    "items": [
+      {
+        "tag": "Inteligência Artificial",
+        "year": "2025",
+        "title": "Ask Room + Gemini AI",
+        "topics": [
+          "Gemini AI",
+          "Next.js",
+          "TanStack Query",
+          "TanStack Form",
+          "Prisma ORM",
+          "Hono.js",
+          "Shadcn UI",
+          "Tailwind CSS",
+          "TypeScript"
+        ],
+        "description": "Projeto full-stack que permite a criação de salas de conhecimento, onde usuários podem adicionar conteúdos em texto ou áudio e, a partir desse contexto, outras pessoas fazem perguntas que são respondidas por uma IA exclusivamente com base no material fornecido.",
+        "repository": "https://github.com/marquesmaycon/ask-room",
+        "demo": "https://ask-room.mklly.com.br/"
+      },
+      {
+        "tag": "TurboRepo + AdonisJS + TanStack Start",
+        "year": "2026",
+        "title": "Stock Forge",
+        "topics": [
+          "AdonisJS 7",
+          "TanStack Start",
+          "TanStack Table",
+          "TanStack Form",
+          "TanStack Query",
+          "Shadcn UI",
+          "Tailwind CSS",
+          "TypeScript"
+        ],
+        "description": "Projeto monorepo para gerenciamento de produtos e matérias-primas. Forjar um produto consome insumos, atualizando o estoque e interferindo em outras produções.",
+        "repository": "https://github.com/marquesmaycon/stock-forge",
+        "demo": "https://stock-forge.mklly.com.br/"
+      },
+      {
+        "tag": "Fluxo de Checkout",
+        "year": "2025",
+        "title": "Marketplace Next.js",
+        "topics": [
+          "React",
+          "Next.js",
+          "TanStack Query",
+          "TanStack Form",
+          "Shadcn UI",
+          "Tailwind CSS",
+          "TypeScript"
+        ],
+        "description": "Aplicação moderna desenvolvida para demonstrar um fluxo completo de checkout com autenticação, carrinho e múltiplos métodos de pagamento.",
+        "repository": "https://github.com/marquesmaycon/marketplace-nextjs",
+        "demo": "https://marketplace-nextjs.mklly.com.br/"
+      },
+      {
+        "tag": "Mono Repo",
+        "year": "2025",
+        "title": "Next.js Saas RBAC",
+        "topics": [
+          "Next.js",
+          "Turborepo",
+          "PostgreSQL",
+          "Prisma ORM",
+          "Fastify",
+          "Node",
+          "Shadcn/ui",
+          "Tailwind CSS",
+          "TypeScript"
+        ],
+        "description": "SaaS multi-tenant com autenticação robusta e sistema de autorização baseado em RBAC (Role-Based Access Control). Desenvolvido com as melhores práticas e arquitetura monorepo para máxima escalabilidade e reutilização de código.",
+        "repository": "https://github.com/marquesmaycon/next-saas-rbac",
+        "demo": null
+      },
+      {
+        "tag": "Full Stack",
+        "year": "2025",
+        "title": "Habit Tracker",
+        "topics": [
+          "React",
+          "Next.js",
+          "PostgreSQL",
+          "Drizzle ORM",
+          "Tailwind CSS",
+          "Radix UI",
+          "Dayjs",
+          "TypeScript"
+        ],
+        "description": "Um sistema de rastreamento de hábitos. Adicione hábitos, configure o dia da semana, acompanhe seu progresso, dados persistidos no banco de dados.",
+        "repository": "https://github.com/marquesmaycon/habit-tracker",
+        "demo": "https://habit-tracker.mklly.com.br/"
+      },
+      {
+        "tag": "Simulador",
+        "year": "2025",
+        "title": "Microondas",
+        "topics": ["React", "TailwindCSS", "Vite", "TypeScript"],
+        "description": "Um simulador interativo de microondas com sons e funcionalidades fieis do eletrodoméstico.",
+        "repository": "https://github.com/marquesmaycon/microwave",
+        "demo": "https://microondas.mklly.com.br/"
+      }
+    ]
+  },
+  "Tape": {
+    "items": [
+      "Performático",
+      "Acessível",
+      "Seguro",
+      "Interativo",
+      "Escalável",
+      "Intuitivo",
+      "Modular",
+      "Personalizável",
+      "Moderno",
+      "Rápido",
+      "Responsivo",
+      "Eficiente",
+      "Otimizado",
+      "Robusto",
+      "Flexível"
+    ]
+  },
+  "Contact": {
+    "eyebrow": "Entre em contato",
+    "titlePrefix": "Vamos criar algo",
+    "titleHighlight": "incrível",
+    "titleSuffix": "juntos.",
+    "openButton": "ABRIR",
+    "items": [
+      {
+        "title": "LinkedIn",
+        "subtitle": "Maycon Henrique da Silva",
+        "link": "https://www.linkedin.com/in/mayconhenrique/"
+      },
+      {
+        "title": "GitHub",
+        "subtitle": "@marquesmaycon",
+        "link": "https://github.com/marquesmaycon"
+      },
+      {
+        "title": "E-mail",
+        "subtitle": "mayconmarquesh@gmail.com",
+        "link": "mailto:mayconmarquesh@gmail.com"
+      },
+      {
+        "title": "WhatsApp",
+        "subtitle": "+55 44 99117-3753",
+        "link": "https://web.whatsapp.com/send?phone=5544991173753&text=Oi%20Maycon%2C%20vim%20do%20seu%20portf%C3%B3lio"
+      }
+    ]
+  },
+  "Footer": {
+    "rights": "Todos os direitos reservados.",
+    "name": "Maycon Silva"
+  }
+}
