@@ -1,20 +1,24 @@
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { contacts } from "@/lib/constanst";
 
 import { Button } from "../ui/button";
 
 export function Contact() {
+  const t = useTranslations("Contact");
   return (
     <section id="contact">
       <div className="container">
         <div className="lg:grid lg:grid-cols-3">
           <div className="fade-up row-span-2 min-h-64 w-full border-b py-4 md:border-r md:border-l md:p-8 lg:border-b-0">
-            <span className="text-muted-foreground">Entre em contato</span>
+            <span className="text-muted-foreground">{t("eyebrow")}</span>
             <h4 className="font-heading mt-4 text-3xl leading-12 font-normal text-pretty sm:max-w-2/3 md:max-w-none">
-              Vamos criar algo{" "}
-              <span className="text-accent font-extrabold">incrível</span>{" "}
-              juntos.
+              {t.rich("title", {
+                span: (chunks) => (
+                  <span className="text-accent font-extrabold">{chunks}</span>
+                ),
+              })}
             </h4>
           </div>
           <div className="bg-border col-span-2 grid gap-px md:grid-cols-2 md:border-r md:border-l lg:border-l-0">
@@ -34,7 +38,7 @@ export function Contact() {
                 <div className="fade-up mt-auto">
                   <Button asChild variant="link">
                     <span>
-                      ABRIR <ArrowUpRight />
+                      {t("openButton")} <ArrowUpRight />
                     </span>
                   </Button>
                 </div>

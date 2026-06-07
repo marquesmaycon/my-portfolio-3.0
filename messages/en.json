@@ -149,32 +149,8 @@
   },
   "Contact": {
     "eyebrow": "Get in touch",
-    "titlePrefix": "Let's create something",
-    "titleHighlight": "amazing",
-    "titleSuffix": "together.",
-    "openButton": "OPEN",
-    "items": [
-      {
-        "title": "LinkedIn",
-        "subtitle": "Maycon Henrique da Silva",
-        "link": "https://www.linkedin.com/in/mayconhenrique/"
-      },
-      {
-        "title": "GitHub",
-        "subtitle": "@marquesmaycon",
-        "link": "https://github.com/marquesmaycon"
-      },
-      {
-        "title": "E-mail",
-        "subtitle": "mayconmarquesh@gmail.com",
-        "link": "mailto:mayconmarquesh@gmail.com"
-      },
-      {
-        "title": "WhatsApp",
-        "subtitle": "+55 44 99117-3753",
-        "link": "https://web.whatsapp.com/send?phone=5544991173753&text=Hi%20Maycon%2C%20I%20came%20from%20your%20portfolio"
-      }
-    ]
+    "title": "Let's create something <span>amazing</span> together.",
+    "openButton": "OPEN"
   },
   "Footer": {
     "rights": "All rights reserved.",
