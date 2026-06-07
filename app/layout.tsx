@@ -1,34 +1,39 @@
-import "./globals.css"
+import "./globals.css";
 
-import type { Metadata } from "next"
-import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google"
+import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils"
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 
-const jetbrainsMonoHeading = JetBrains_Mono({ subsets: ["latin"], variable: "--font-heading" })
+const jetbrainsMonoHeading = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"]
-})
+  subsets: ["latin"],
+});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"]
-})
+  subsets: ["latin"],
+});
 
-export const metadata: Metadata = {
-  title: "Maycon Marques | Desenvolvedor Full Stack",
-  description:
-    "Construindo experiências digitais modernas com foco em performance, usabilidade e arquitetura escalável.",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("Metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html
