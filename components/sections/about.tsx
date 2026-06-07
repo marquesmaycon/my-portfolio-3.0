@@ -1,49 +1,9 @@
-import {
-  BrainCircuit,
-  Cloud,
-  Code2,
-  GraduationCap,
-  Rocket,
-  Sparkles,
-} from "lucide-react";
+import { Cloud, GraduationCap, Sparkles } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+import { useAbountContent } from "@/hooks/use-about-content";
 
 import { Badge } from "../ui/badge";
-
-const aboutHighlights = [
-  {
-    value: "2022",
-    label: "comecei a estudar código e desenvolvimento web",
-  },
-  {
-    value: "2023",
-    label: "iniciei minha atuação profissional como Full Stack",
-  },
-  {
-    value: "2025",
-    label: "me formei em Análise e Desenvolvimento de Sistemas",
-  },
-] as const;
-
-const aboutFocus = [
-  {
-    title: "Produto de ponta a ponta",
-    description:
-      "Gosto de transformar requisitos em jornadas claras, conectando regra de negócio, interface e dados com atenção aos detalhes.",
-    icon: Rocket,
-  },
-  {
-    title: "Arquitetura limpa",
-    description:
-      "Priorizo performance, escalabilidade e código organizado para que o produto cresça sem virar um peso para evoluir.",
-    icon: Code2,
-  },
-  {
-    title: "Fluxo inteligente",
-    description:
-      "Trato IA como uma parceira de trabalho para pesquisar, prototipar e revisar melhor, mantendo decisão técnica no centro.",
-    icon: BrainCircuit,
-  },
-] as const;
 
 const techStack = [
   "React",
@@ -57,6 +17,10 @@ const techStack = [
 ] as const;
 
 export function About() {
+  const t = useTranslations("About");
+
+  const { highlights, focus } = useAbountContent();
+
   return (
     <section id="about" className="overflow-hidden py-12 md:py-20">
       <div className="container">
@@ -65,24 +29,20 @@ export function About() {
             <div>
               <span className="text-muted-foreground inline-flex items-center gap-2 text-sm uppercase">
                 <Sparkles className="text-accent size-4" />
-                Sobre mim
+                {t("eyebrow")}
               </span>
 
               <h2 className="font-heading mt-5 text-3xl font-bold text-pretty md:text-5xl">
-                Código, produto e clareza caminhando juntos.
+                {t("title")}
               </h2>
             </div>
 
             <p className="text-muted-foreground leading-7 text-pretty">
-              Minha trajetória com tecnologia começou pela curiosidade de
-              entender como uma ideia vira software de verdade. Desde então,
-              venho construindo repertório entre estudo, faculdade e prática
-              profissional para criar soluções úteis, bem pensadas e fáceis de
-              evoluir.
+              {t("description")}
             </p>
 
             <div className="stagger-fade grid overflow-hidden border sm:grid-cols-3 [&>.stagger-item+*]:border-t sm:[&>.stagger-item+*]:border-t-0 sm:[&>.stagger-item+*]:border-l">
-              {aboutHighlights.map(({ value, label }) => (
+              {highlights.map(({ value, label }) => (
                 <div key={value} className="stagger-item bg-background p-4">
                   <strong className="font-heading text-accent text-2xl">
                     {value}
@@ -97,7 +57,7 @@ export function About() {
 
           <div className="grid gap-6">
             <div className="fade-right stagger-fade grid overflow-hidden border md:grid-cols-3 [&>.stagger-item+*]:border-t md:[&>.stagger-item+*]:border-t-0 md:[&>.stagger-item+*]:border-l">
-              {aboutFocus.map(({ title, description, icon: Icon }) => (
+              {focus.map(({ title, description, icon: Icon }) => (
                 <article
                   key={title}
                   className="stagger-item bg-background p-5 md:p-6"
@@ -116,14 +76,11 @@ export function About() {
                 <div>
                   <h3 className="font-heading flex items-center gap-2 text-xl font-bold">
                     <Cloud className="text-accent mt-1" />
-                    Stack principal
+                    {t("stackTitle")}
                   </h3>
                 </div>
                 <p className="text-muted-foreground mt-2 leading-7">
-                  Trabalho principalmente com React, Next.js, TypeScript,
-                  Node.js, AdonisJS, infraestrutura em nuvem com AWS e bases
-                  relacionais, equilibrando experiência de uso, performance e
-                  manutenção.
+                  {t("stackDescription")}
                 </p>
               </div>
 
@@ -142,7 +99,7 @@ export function About() {
 
             <div className="fade-right text-muted-foreground flex items-center gap-3 text-sm">
               <GraduationCap className="text-accent size-5 shrink-0" />
-              Formado em Análise e Desenvolvimento de Sistemas (2025)
+              {t("education")}
             </div>
           </div>
         </div>

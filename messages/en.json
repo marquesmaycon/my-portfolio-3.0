@@ -82,16 +82,6 @@
     ],
     "stackTitle": "Main stack",
     "stackDescription": "I mainly work with React, Next.js, TypeScript, Node.js, AdonisJS, AWS cloud infrastructure, and relational databases, balancing user experience, performance, and maintainability.",
-    "techStack": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "AWS",
-      "PostgreSQL",
-      "Prisma",
-      "AdonisJS"
-    ],
     "education": "Graduated in Systems Analysis and Development (2025)"
   },
   "Projects": {

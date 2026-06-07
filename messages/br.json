@@ -80,16 +80,6 @@
     ],
     "stackTitle": "Stack principal",
     "stackDescription": "Trabalho principalmente com React, Next.js, TypeScript, Node.js, AdonisJS, infraestrutura em nuvem com AWS e bases relacionais, equilibrando experiência de uso, performance e manutenção.",
-    "techStack": [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "AWS",
-      "PostgreSQL",
-      "Prisma",
-      "AdonisJS"
-    ],
     "education": "Formado em Análise e Desenvolvimento de Sistemas (2025)"
   },
   "Projects": {

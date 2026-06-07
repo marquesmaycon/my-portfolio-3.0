@@ -2,7 +2,10 @@ import {
   Anvil,
   BookImage,
   Brain,
+  BrainCircuit,
+  Code2,
   Microwave,
+  Rocket,
   ShoppingBag,
   UserRoundKey,
 } from "lucide-react";
@@ -190,5 +193,41 @@ export const portfolioProjects = [
     repository: "https://github.com/marquesmaycon/microwave",
     icon: Microwave,
     image: "/dummy-users.png",
+  },
+] as const;
+
+export const aboutHighlights = [
+  {
+    value: "2022",
+    label: "comecei a estudar código e desenvolvimento web",
+  },
+  {
+    value: "2023",
+    label: "iniciei minha atuação profissional como Full Stack",
+  },
+  {
+    value: "2025",
+    label: "me formei em Análise e Desenvolvimento de Sistemas",
+  },
+] as const;
+
+export const aboutFocus = [
+  {
+    title: "Produto de ponta a ponta",
+    description:
+      "Gosto de transformar requisitos em jornadas claras, conectando regra de negócio, interface e dados com atenção aos detalhes.",
+    icon: Rocket,
+  },
+  {
+    title: "Arquitetura limpa",
+    description:
+      "Priorizo performance, escalabilidade e código organizado para que o produto cresça sem virar um peso para evoluir.",
+    icon: Code2,
+  },
+  {
+    title: "Fluxo inteligente",
+    description:
+      "Trato IA como uma parceira de trabalho para pesquisar, prototipar e revisar melhor, mantendo decisão técnica no centro.",
+    icon: BrainCircuit,
   },
 ] as const;
