@@ -1,10 +1,9 @@
 {
   "Metadata": {
-    "title": "Maycon Silva | Desenvolvedor Full Stack",
+    "title": "Maycon Marques | Desenvolvedor Full Stack",
     "description": "Construindo experiências digitais modernas com foco em performance, usabilidade e arquitetura escalável."
   },
   "Navigation": {
-    "brand": "maycon_silva",
     "links": [
       {
         "label": "Início"
@@ -151,7 +150,6 @@
     "openButton": "ABRIR"
   },
   "Footer": {
-    "rights": "Todos os direitos reservados.",
-    "name": "Maycon Silva"
+    "rights": "Todos os direitos reservados."
   }
 }

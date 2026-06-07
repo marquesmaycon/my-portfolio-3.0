@@ -1,10 +1,9 @@
 {
   "Metadata": {
-    "title": "Maycon Silva | Full Stack Developer",
+    "title": "Maycon Marques | Full Stack Developer",
     "description": "Building modern digital experiences with a focus on performance, usability, and scalable architecture."
   },
   "Navigation": {
-    "brand": "maycon_silva",
     "links": [
       {
         "label": "Home"
@@ -153,7 +152,6 @@
     "openButton": "OPEN"
   },
   "Footer": {
-    "rights": "All rights reserved.",
-    "name": "Maycon Silva"
+    "rights": "All rights reserved."
   }
 }

@@ -40,7 +40,7 @@ export function Header() {
       <div className="container flex flex-1 items-center">
         <h3 className="flex-1 font-medium">
           <span className="text-accent">function</span>
-          {"  "} maycon_silva
+          {"  "} maycon_marques
           <span className="text-accent">()</span>;
         </h3>
 

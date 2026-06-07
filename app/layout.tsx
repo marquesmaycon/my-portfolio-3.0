@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Maycon Silva | Desenvolvedor Full Stack",
+  title: "Maycon Marques | Desenvolvedor Full Stack",
   description:
     "Construindo experiências digitais modernas com foco em performance, usabilidade e arquitetura escalável.",
 };
