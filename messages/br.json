@@ -7,20 +7,16 @@
     "brand": "maycon_silva",
     "links": [
       {
-        "label": "Início",
-        "href": "#home"
+        "label": "Início"
       },
       {
-        "label": "Sobre",
-        "href": "#about"
+        "label": "Sobre"
       },
       {
-        "label": "Projetos",
-        "href": "#projects"
+        "label": "Projetos"
       },
       {
-        "label": "Contato",
-        "href": "#contact"
+        "label": "Contato"
       }
     ],
     "mobileMenu": {
@@ -36,8 +32,7 @@
   },
   "Hero": {
     "role": "Desenvolvedor Full-Stack",
-    "titlePrefix": "Construindo",
-    "titleSuffix": "para a web.",
+    "title": "Construindo <animatedText>soluções</animatedText> para a web.",
     "words": [
       "soluções",
       "experiências",

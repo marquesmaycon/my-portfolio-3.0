@@ -3,7 +3,8 @@ import gsap from "gsap";
 import Link from "next/link";
 import { useRef } from "react";
 
-import { fadeAnimationBase, navLinks } from "@/lib/constanst";
+import { useNavigationLinks } from "@/hooks/use-navigation-links";
+import { fadeAnimationBase } from "@/lib/constanst";
 
 import { MobileMenu } from "./mobile-menu";
 import { ThemeSwitcher } from "./theme-switcher";
@@ -11,6 +12,8 @@ import { Button } from "./ui/button";
 
 export function Header() {
   const container = useRef(null);
+
+  const links = useNavigationLinks();
 
   useGSAP(
     () => {
@@ -42,7 +45,7 @@ export function Header() {
         </h3>
 
         <div className="hidden h-full flex-1 items-center justify-center lg:flex">
-          {navLinks.map((nv) => (
+          {links.map((nv) => (
             <Button key={nv.href} variant="link" className="text-sm" asChild>
               <Link href={nv.href} className="nav-link">
                 <span className="scramble">{nv.label}</span>

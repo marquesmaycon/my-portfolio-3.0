@@ -7,20 +7,16 @@
     "brand": "maycon_silva",
     "links": [
       {
-        "label": "Home",
-        "href": "#home"
+        "label": "Home"
       },
       {
-        "label": "About",
-        "href": "#about"
+        "label": "About"
       },
       {
-        "label": "Projects",
-        "href": "#projects"
+        "label": "Projects"
       },
       {
-        "label": "Contact",
-        "href": "#contact"
+        "label": "Contact"
       }
     ],
     "mobileMenu": {
@@ -38,6 +34,7 @@
     "role": "Full-Stack Developer",
     "titlePrefix": "Building",
     "titleSuffix": "for the web.",
+    "title": "Building <animatedText>solutions</animatedText> for the web.",
     "words": [
       "solutions",
       "experiences",

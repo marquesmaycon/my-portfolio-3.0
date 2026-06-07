@@ -1,7 +1,7 @@
 import { ArrowRight, Menu } from "lucide-react";
 import Link from "next/link";
 
-import { navLinks } from "@/lib/constanst";
+import { useNavigationLinks } from "@/hooks/use-navigation-links";
 
 import { Button } from "./ui/button";
 import {
@@ -15,6 +15,7 @@ import {
 } from "./ui/sheet";
 
 export function MobileMenu() {
+  const links = useNavigationLinks();
   return (
     <Sheet>
       <SheetTrigger className="lg:hidden">
@@ -26,7 +27,7 @@ export function MobileMenu() {
           <SheetDescription>Navegue pelas seções</SheetDescription>
         </SheetHeader>
         <div className="flex flex-col items-start gap-8 pt-8">
-          {navLinks.map((nv) => (
+          {links.map((nv) => (
             <SheetClose asChild key={nv.href}>
               <Button asChild variant="link">
                 <Link href={nv.href}>

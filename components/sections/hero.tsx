@@ -5,21 +5,26 @@ import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { useRef } from "react";
 
-import { fadeAnimationBase, heroWords, scrambleChars } from "@/lib/constanst";
+import { fadeAnimationBase, scrambleChars } from "@/lib/constanst";
 
 import { ParticlesExposion } from "../particles-explosion";
 import { Button } from "../ui/button";
 
 export function Hero() {
+  const t = useTranslations("Hero");
+
+  const words = t.raw("words") as string[];
+
   const container = useRef<HTMLDivElement>(null);
 
   useGSAP(
     () => {
       const tl = gsap.timeline({ repeat: -1 });
 
-      heroWords.forEach((word) => {
+      words.forEach((word) => {
         tl.to("span.text-accent", {
           duration: 2,
           scrambleText: {
@@ -82,20 +87,20 @@ export function Hero() {
         <div className="z-10 flex flex-col gap-8 md:text-center lg:gap-16">
           <div>
             <h3 className="font-heading fade-text text-md mb-6 font-medium uppercase lg:text-base">
-              Desenvolvedor Full-Stack
+              {t("role")}
             </h3>
             <h1 className="font-heading fade-in-h1 text-5xl font-bold lg:text-6xl lg:leading-20">
-              Construindo <span className="text-accent">{heroWords[0]}</span>{" "}
-              <br />
-              para a web.
+              {t.rich("title", {
+                animatedText: (chunks) => (
+                  <span className="text-accent">{chunks}</span>
+                ),
+              })}
             </h1>
           </div>
 
-          <div className="mx-auto text-balance lg:max-w-2/3">
+          <div className="text-balance sm:mx-auto lg:max-w-2/3">
             <p className="text-muted-foreground fade-text leading-7">
-              Meu nome é Maycon, sou um desenvolvedor de software especializado
-              em construir interfaces modernas, APIs robustas e experiências web
-              de alta performance.
+              {t("description")}
             </p>
           </div>
 
@@ -106,7 +111,8 @@ export function Hero() {
               className="font-heading fade-buttons transition-colors"
             >
               <Link href="#projects">
-                <span className="scramble">Projetos</span> <ArrowDown />
+                <span className="scramble">{t("projectsButton")}</span>
+                <ArrowDown />
               </Link>
             </Button>
             <Button
@@ -116,7 +122,7 @@ export function Hero() {
               className="font-heading bg-background/10 fade-buttons backdrop-blur-md transition-colors"
             >
               <Link href="#contact">
-                <span className="scramble">Contato</span>
+                <span className="scramble">{t("contactButton")}</span>
               </Link>
             </Button>
           </div>
