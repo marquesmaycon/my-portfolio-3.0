@@ -3,29 +3,33 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Plus, X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useRef } from "react";
 
 gsap.registerPlugin(useGSAP);
 
-const items = [
-  "Performático",
-  "Acessível",
-  "Seguro",
-  "Interativo",
-  "Escalável",
-  "Intuitivo",
-  "Modular",
-  "Personalizável",
-  "Moderno",
-  "Rápido",
-  "Responsivo",
-  "Eficiente",
-  "Otimizado",
-  "Robusto",
-  "Flexível",
-];
+// const items = [
+//   "Performático",
+//   "Acessível",
+//   "Seguro",
+//   "Interativo",
+//   "Escalável",
+//   "Intuitivo",
+//   "Modular",
+//   "Personalizável",
+//   "Moderno",
+//   "Rápido",
+//   "Responsivo",
+//   "Eficiente",
+//   "Otimizado",
+//   "Robusto",
+//   "Flexível",
+// ];
 
 export function Tape() {
+  const t = useTranslations("Tape");
+  const items: string[] = t.raw("items");
+
   const container = useRef<HTMLDivElement>(null);
 
   useGSAP(
