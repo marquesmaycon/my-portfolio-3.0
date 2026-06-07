@@ -1,14 +1,19 @@
 import { useGSAP } from "@gsap/react";
 import { ArrowUpRight, Plus } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useRef } from "react";
 
-import { portfolioProjects } from "@/lib/constanst";
+import { useProjects } from "@/hooks/use-projects";
 import { gsap } from "@/lib/gsap";
 
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 
 export function Projects() {
+  const t = useTranslations("Projects");
+
+  const projects = useProjects();
+
   const iconRef = useRef<SVGSVGElement>(null);
 
   useGSAP(() => {
@@ -55,14 +60,14 @@ export function Projects() {
         </div>
         <div>
           <h2 className="font-heading fade-up mb-4 text-center text-3xl font-bold md:text-5xl">
-            Projetos em Destaque
+            {t("title")}
           </h2>
           <p className="text-muted-foreground fade-up text-center text-balance md:text-lg">
-            Esses são meus projetos mais relevantes e completos
+            {t("description")}
           </p>
         </div>
         <ul className="mt-10 flex flex-col gap-8 md:mt-20">
-          {portfolioProjects.map(
+          {projects.map(
             (
               {
                 title,
@@ -115,7 +120,9 @@ export function Projects() {
                     <div className="flex flex-wrap items-center gap-2 md:gap-4">
                       <Button asChild size="xl">
                         <a href={repository} target="_blank">
-                          <span className="scramble">Ver Repositório</span>
+                          <span className="scramble">
+                            {t("repositoryButton")}
+                          </span>
                           <ArrowUpRight />
                         </a>
                       </Button>
@@ -123,7 +130,7 @@ export function Projects() {
                       {demo && (
                         <Button variant="outline" size="xl" asChild>
                           <a href={demo} target="_blank">
-                            <span className="scramble">Ver Demo</span>
+                            <span className="scramble">{t("demoButton")}</span>
                             <ArrowUpRight />
                           </a>
                         </Button>

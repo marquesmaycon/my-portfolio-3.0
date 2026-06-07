@@ -94,106 +94,37 @@
         "tag": "Artificial Intelligence",
         "year": "2025",
         "title": "Ask Room + Gemini AI",
-        "topics": [
-          "Gemini AI",
-          "Next.js",
-          "TanStack Query",
-          "TanStack Form",
-          "Prisma ORM",
-          "Hono.js",
-          "Shadcn UI",
-          "Tailwind CSS",
-          "TypeScript"
-        ],
-        "description": "A full-stack project that enables the creation of knowledge rooms, where users can add text or audio content and, based on that context, other people can ask questions answered by an AI exclusively from the provided material.",
-        "repository": "https://github.com/marquesmaycon/ask-room",
-        "demo": "https://ask-room.mklly.com.br/"
+        "description": "A full-stack project that enables the creation of knowledge rooms, where users can add text or audio content and, based on that context, other people can ask questions answered by an AI exclusively from the provided material."
       },
       {
         "tag": "TurboRepo + AdonisJS + TanStack Start",
         "year": "2026",
         "title": "Stock Forge",
-        "topics": [
-          "AdonisJS 7",
-          "TanStack Start",
-          "TanStack Table",
-          "TanStack Form",
-          "TanStack Query",
-          "Shadcn UI",
-          "Tailwind CSS",
-          "TypeScript"
-        ],
-        "description": "A monorepo project for managing products and raw materials. Forging a product consumes supplies, updates inventory, and affects other productions.",
-        "repository": "https://github.com/marquesmaycon/stock-forge",
-        "demo": "https://stock-forge.mklly.com.br/"
+        "description": "A monorepo project for managing products and raw materials. Forging a product consumes supplies, updates inventory, and affects other productions."
       },
       {
         "tag": "Checkout Flow",
         "year": "2025",
         "title": "Marketplace Next.js",
-        "topics": [
-          "React",
-          "Next.js",
-          "TanStack Query",
-          "TanStack Form",
-          "Shadcn UI",
-          "Tailwind CSS",
-          "TypeScript"
-        ],
-        "description": "A modern application built to demonstrate a complete checkout flow with authentication, shopping cart, and multiple payment methods.",
-        "repository": "https://github.com/marquesmaycon/marketplace-nextjs",
-        "demo": "https://marketplace-nextjs.mklly.com.br/"
+        "description": "A modern application built to demonstrate a complete checkout flow with authentication, shopping cart, and multiple payment methods."
       },
       {
         "tag": "Mono Repo",
         "year": "2025",
         "title": "Next.js Saas RBAC",
-        "topics": [
-          "Next.js",
-          "Turborepo",
-          "PostgreSQL",
-          "Prisma ORM",
-          "Fastify",
-          "Node",
-          "Shadcn/ui",
-          "Tailwind CSS",
-          "TypeScript"
-        ],
-        "description": "A multi-tenant SaaS with robust authentication and an authorization system based on RBAC (Role-Based Access Control). Built with best practices and monorepo architecture for maximum scalability and code reuse.",
-        "repository": "https://github.com/marquesmaycon/next-saas-rbac",
-        "demo": null
+        "description": "A multi-tenant SaaS with robust authentication and an authorization system based on RBAC (Role-Based Access Control). Built with best practices and monorepo architecture for maximum scalability and code reuse."
       },
       {
         "tag": "Full Stack",
         "year": "2025",
         "title": "Habit Tracker",
-        "topics": [
-          "React",
-          "Next.js",
-          "PostgreSQL",
-          "Drizzle ORM",
-          "Tailwind CSS",
-          "Radix UI",
-          "Dayjs",
-          "TypeScript"
-        ],
-        "description": "A habit tracking system. Add habits, configure the day of the week, track your progress, and keep data persisted in the database.",
-        "repository": "https://github.com/marquesmaycon/habit-tracker",
-        "demo": "https://habit-tracker.mklly.com.br/"
+        "description": "A habit tracking system. Add habits, configure the day of the week, track your progress, and keep data persisted in the database."
       },
       {
         "tag": "Simulator",
         "year": "2025",
         "title": "Microwave",
-        "topics": [
-          "React",
-          "TailwindCSS",
-          "Vite",
-          "TypeScript"
-        ],
-        "description": "An interactive microwave simulator with sounds and features faithful to the appliance.",
-        "repository": "https://github.com/marquesmaycon/microwave",
-        "demo": "https://microondas.mklly.com.br/"
+        "description": "An interactive microwave simulator with sounds and features faithful to the appliance."
       }
     ]
   },
