@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useNavigationLinks } from "@/hooks/use-navigation-links";
 import { fadeAnimationBase } from "@/lib/constanst";
 
+import { LocaleSwitcher } from "./locale-switcher";
 import { MobileMenu } from "./mobile-menu";
 import { ThemeSwitcher } from "./theme-switcher";
 import { Button } from "./ui/button";
@@ -54,11 +55,12 @@ export function Header() {
           ))}
         </div>
 
-        <div className="gsap-fade-in hidden h-full flex-1 items-center justify-end lg:flex">
+        <div className="gsap-fade-in hidden h-full flex-1 items-center justify-end gap-1 lg:flex">
+          <LocaleSwitcher />
           <ThemeSwitcher />
         </div>
 
-        <div className="gsap-fade-in">
+        <div className="gsap-fade-in flex">
           <MobileMenu />
         </div>
       </div>

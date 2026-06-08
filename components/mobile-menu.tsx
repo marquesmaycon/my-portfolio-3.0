@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 
 import { useNavigationLinks } from "@/hooks/use-navigation-links";
 
+import { LocaleSwitcher } from "./locale-switcher";
+import { ThemeSwitcher } from "./theme-switcher";
 import { Button } from "./ui/button";
 import {
   Sheet,
@@ -29,7 +31,7 @@ export function MobileMenu() {
           <SheetTitle className="">{t("mobileMenu.title")}</SheetTitle>
           <SheetDescription>{t("mobileMenu.description")}</SheetDescription>
         </SheetHeader>
-        <div className="flex flex-col items-start gap-8 pt-8">
+        <div className="flex h-full flex-col items-start gap-8 pt-8">
           {links.map((nv) => (
             <SheetClose asChild key={nv.href}>
               <Button asChild variant="link">
@@ -39,6 +41,10 @@ export function MobileMenu() {
               </Button>
             </SheetClose>
           ))}
+          <div className="mt-auto mb-8 flex w-full items-center justify-evenly">
+            <LocaleSwitcher />
+            <ThemeSwitcher />
+          </div>
         </div>
       </SheetContent>
     </Sheet>

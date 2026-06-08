@@ -29,6 +29,10 @@
     "dark": "Escuro",
     "system": "Sistema"
   },
+  "LocaleSwitcher": {
+    "toggleLabel": "Alterar idioma",
+    "locale": "{locale, select, en {Inglês} br {Português BR} other {Idioma}}"
+  },
   "Hero": {
     "role": "Desenvolvedor Full-Stack",
     "title": "Construindo <animatedText>soluções</animatedText> para a web.",

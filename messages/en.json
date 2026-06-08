@@ -29,6 +29,10 @@
     "dark": "Dark",
     "system": "System"
   },
+  "LocaleSwitcher": {
+    "toggleLabel": "Change language",
+    "locale": "{locale, select, en {English} br {Portuguese BR} other {Language}}"
+  },
   "Hero": {
     "role": "Full-Stack Developer",
     "titlePrefix": "Building",
