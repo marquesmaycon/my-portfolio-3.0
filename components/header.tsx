@@ -21,13 +21,14 @@ export function Header() {
       gsap.from("h3", {
         ...fadeAnimationBase,
         x: -40,
+        delay: 1.8,
       });
 
       gsap.from(".scramble, .gsap-fade-in", {
         ...fadeAnimationBase,
         x: 30,
         stagger: 0.08,
-        delay: 0.15,
+        delay: 1.8,
       });
     },
     { scope: container },
@@ -36,7 +37,7 @@ export function Header() {
   return (
     <header
       ref={container}
-      className="bg-background/10 fixed inset-x-0 z-50 flex h-12 backdrop-blur-sm md:h-14 lg:h-16"
+      className="bg-background/10 fixed inset-x-0 z-30 flex h-12 backdrop-blur-sm md:h-14 lg:h-16"
     >
       <div className="container flex flex-1 items-center">
         <h3 className="flex-1 font-medium">

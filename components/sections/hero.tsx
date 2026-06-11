@@ -40,7 +40,7 @@ export function Hero() {
       gsap.from(".fade-in-h1", {
         ...fadeAnimationBase,
         x: 100,
-        delay: 0.6,
+        delay: 1.9,
       });
 
       SplitText.create(".fade-text", {
@@ -53,7 +53,7 @@ export function Hero() {
             y: 80,
             autoAlpha: 0,
             stagger: 0.01,
-            delay: 0.6,
+            delay: 1.9,
           });
         },
       });
@@ -62,7 +62,7 @@ export function Hero() {
         x: "-100%",
         duration: 1,
         stagger: 0.2,
-        delay: 0.6,
+        delay: 1.9,
         ease: "circ.out",
       });
 
@@ -70,7 +70,7 @@ export function Hero() {
         y: "100%",
         duration: 1,
         stagger: 0.2,
-        delay: 0.6,
+        delay: 1.9,
         ease: "circ.out",
       });
     },

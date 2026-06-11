@@ -3,6 +3,7 @@
 import { useGSAP } from "@gsap/react";
 
 import { Header } from "@/components/header";
+import { Loader } from "@/components/loader";
 import { About } from "@/components/sections/about";
 import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
@@ -105,6 +106,7 @@ export default function Home() {
 
   return (
     <div className="divide divide-y">
+      <Loader />
       <Header />
       <Hero />
       <About />
