@@ -74,7 +74,7 @@ export function Hero() {
         ease: "circ.out",
       });
     },
-    { scope: container },
+    { scope: container, dependencies: [words] },
   );
 
   return (
