@@ -1,5 +1,6 @@
 import {
   Anvil,
+  Beer,
   BookImage,
   Brain,
   BrainCircuit,
@@ -115,6 +116,33 @@ export const portfolioProjects = [
 
     icon: Anvil,
     image: "/stock-forge.png",
+  },
+  {
+    tag: "Controle Fermentativo",
+    year: "2026",
+    title: "Brew Monitor",
+    topics: [
+      "C#",
+      ".NET 10",
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "PostgreSQL",
+      "React 19",
+      "Vite",
+      "TanStack Router",
+      "TanStack Query",
+      "TanStack Form",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "TypeScript",
+    ],
+    description:
+      "Aplicação full-stack para registrar e acompanhar dados de fermentação cervejeira, com CRUD de cervejas, tanques, parâmetros e registros fermentativos, além de dashboard, histórico por lote e classificação automática dos apontamentos.",
+    repository: "https://github.com/marquesmaycon/brew-monitor",
+    demo: "https://brew-monitor.mklly.com.br/",
+
+    icon: Beer,
+    image: "/dummy-users.png",
   },
   {
     tag: "Fluxo de Checkout",

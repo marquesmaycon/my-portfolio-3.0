@@ -106,6 +106,12 @@
         "description": "A monorepo project for managing products and raw materials. Forging a product consumes supplies, updates inventory, and affects other productions."
       },
       {
+        "tag": "Fermentation Monitoring",
+        "year": "2026",
+        "title": "Brew Monitor",
+        "description": "A full-stack application for recording and tracking beer fermentation data, with CRUD flows for beers, tanks, parameters, and fermentation records, plus a dashboard, batch history, and automatic record classification."
+      },
+      {
         "tag": "Checkout Flow",
         "year": "2025",
         "title": "Marketplace Next.js",

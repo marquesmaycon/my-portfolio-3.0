@@ -104,6 +104,12 @@
         "description": "Projeto monorepo para gerenciamento de produtos e matérias-primas. Forjar um produto consome insumos, atualizando o estoque e interferindo em outras produções."
       },
       {
+        "tag": "Controle Fermentativo",
+        "year": "2026",
+        "title": "Brew Monitor",
+        "description": "Aplicação full-stack para registrar e acompanhar dados de fermentação cervejeira, com CRUD de cervejas, tanques, parâmetros e registros fermentativos, além de dashboard, histórico por lote e classificação automática dos apontamentos."
+      },
+      {
         "tag": "Fluxo de Checkout",
         "year": "2025",
         "title": "Marketplace Next.js",
